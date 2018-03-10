@@ -21,3 +21,8 @@ gradle build
 ```
 java -jar PageChangedDetector.jar
 ```
+
+## Logo
+
+PageChangedDetector's logo is free. Credit goes to its creator [Techmates Solutions](https://www.iconfinder.com/darshakd): check it out [here](https://www.iconfinder.com/iconsets/web-icons-19)
+
