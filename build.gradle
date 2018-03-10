@@ -1,0 +1,24 @@
+apply plugin: 'java'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.21'
+	compile 'org.jsoup:jsoup:1.7.2'
+	compile 'javax:javaee-api:7.0'
+    testCompile 'junit:junit:4.12'
+}
+
+jar {
+  from {
+  	// needed to generate a fatJar with dependencies
+    configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+  }
+  manifest {
+    attributes(
+      'Main-Class': 'it.ciroliviero.PageChangedDetectorApplication'
+    )
+  }
+}

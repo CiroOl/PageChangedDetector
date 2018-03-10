@@ -1,0 +1,18 @@
+.git/
+
+# Java class files
+*.class
+
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+#Gradle
+.gradletasknamecache
+.gradle/
+gradle/
+build/
+bin/
+gradlew
+gradlew.bat
